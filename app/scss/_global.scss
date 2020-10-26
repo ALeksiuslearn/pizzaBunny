@@ -1,0 +1,108 @@
+//* Base
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+  cursor: pointer;
+}
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+}
+button {
+  cursor: pointer;
+  border: none;
+  background: transparent;
+}
+body {
+  overflow-x: hidden;
+  min-width: 320px;
+}
+
+//!footer k nizu
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+.content {
+  flex: 1 0 auto;
+}
+.footer {
+  flex: 0 0 auto;
+}
+//* base end
+body {
+  font-family: sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: $white;
+  @include sfp-reg;
+  letter-spacing: 0.12em;
+}
+.containerfluid {
+  margin: 0 auto;
+  max-width: 1440px;
+  min-height: 900px;
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+//!breadcrumbs
+// .breadcrumbs {
+//   margin-bottom: 40px;
+// }
+// .breadcrumbs__list-item {
+//   display: inline-block;
+//   padding-right: 16px;
+//   margin-right: 10px;
+//   position: relative;
+//   font-size: 15px;
+//   line-height: 18px;
+//   color: $grey;
+
+//   &::before {
+//     position: absolute;
+//     content: "";
+//     right: 0;
+//     bottom: 3px;
+//     background: center/cover no-repeat url(../images/icon/Back.svg);
+//     width: 4px;
+//     height: 10px;
+//   }
+//   &:last-child::before {
+//     display: none;
+//   }
+// }

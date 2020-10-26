@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PizzaBunny</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <!--!Start Header -->
+            <header class="header">
+                <div class="containerfluid header__containerfluid"
+                    style="background:center/cover no-repeat #000 url(images/background/bg-main.jpg);">
+                    <div class="container">
+                        <div class="content__wrapper">
+                            <div class="header__top top__icons">
+                                <a class="header__logo logo" href="#">
+                                    <img src="images/logo.png" alt="Логотип Pizza Bunny" class="logo__img">
+                                </a>
+                                <div class="inner__menu-btn">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                                <a href="#" class="basket">
+                                    <img class="basket__img" src="images/icon/basket.svg" alt="Корзина">
+                                </a>
+
+                            </div>
+                            <div class="inner__menu">
+                                <div class="inner__menu-wrapper">
+                                    <nav class="header__menu menu">
+                                        <ul class="menu__list">
+                                            <li class="menu__item">
+                                                <a href="#main" class="menu__link">Главная</a>
+                                            </li>
+                                            <li class="menu__item">
+                                                <a href="#catalog" class="menu__link">Каталог</a>
+                                            </li>
+                                            <li class="menu__item">
+                                                <a href="#sale" class="menu__link">Акции</a>
+                                            </li>
+                                            <li class="menu__item">
+                                                <a href="#delivery" class="menu__link">Доставка</a>
+                                            </li>
+                                            <li class="menu__item">
+                                                <a href="#aboutUs" class="menu__link">О нас</a>
+                                            </li>
+                                            <li class="menu__item">
+                                                <a href="#contacts" class="menu__link">Контакты</a>
+                                            </li>
+                                        </ul>
+                                        <div class="header__contacts contacts">
+                                            <p class="contact__adress">
+                                                г.Киев<br>
+                                                ул. Киевская 1
+                                            </p>
+                                            <p class="contact__phone">
+                                                <a class="contact__phone-tel1" href="tel:+388005005050">
+                                                    +38-800-500-50-50</a>
+                                                <a class="contact__phone-tel2" href="tel:+388005005051">
+                                                    +38-800-501-51-51</a>
+                                        </div>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="bunnypizza__img" src="images/PizzaBunny.png" alt="">
+                </div>
+            </header>
+            <!-- ! Header End -->
+            <section class="catalog page__section">
+                <div class="containerfluid catalog__containerfluid"
+                    style="background:center/cover url(images/background/catalog-background.png);">
+                    <div class="container">
+                        <div class="catalog__inner inner">
+                            <h2 class="catalog__title title">Каталог</h2>
+                            <div class="catalog__filter">
+                                <button class="filter__btn" data-filter=".all">Все</button>
+                                <button class="filter__btn" data-filter=".new">Новое</button>
+                                <button class="filter__btn" data-filter=".popular">Популярное</button>
+                                <button class="filter__btn" data-filter=".sale">Горячие предложения</button>
+
+                                <button class="filter__btn" data-filter=".classic">Классическая</button>
+                                <button class="filter__btn" data-filter=".spicy">Острая</button>
+                                <button class="filter__btn" data-filter=".vegan">Веганская</button>
+
+                            </div>
+                            <div class="catalog__items items">
+                                <div class="catalog__item item mix all spicy">
+                                    <div class="item__top">
+                                        <a class="item__link" href="#">
+                                            <img class="item__img" src="images/content/Pizza_gurmeo.png"
+                                                alt="Пицца Гурмео">
+                                            <h3 class="item__title">Гурмео</h3>
+                                        </a>
+                                        <p class="item__weight">580 г</p>
+                                        <p class="item__text">Филе куриное, sous-vide, бекон, колбаски охотничьи,
+                                            пеперони,
+                                            сыр моцарела, шампиньоны, петрушка, соус BBQ и трюфельное масло </p>
+                                    </div>
+                                    <div class="item__bot">
+                                        <div class="item__count">
+                                            <button class="item__count-remove">
+                                                <img src="images/icon/remove.svg " alt="удалить пуццу">
+                                            </button>
+                                            <span class="item__count-numbr">0</span>
+                                            <button class="item__count-add">
+                                                <img src="images/icon/add.svg" alt="добавить пиццу">
+                                            </button>
+                                        </div>
+                                        <p class="item__price">160 грн</p>
+                                        <button class="item__basket">
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="catalog__item item mix all all new classic vegan">
+                                    <div class="item__top">
+                                        <a class="item__link" href="#">
+                                            <img class="item__img" src="images/content/pizza-margarita.png"
+                                                alt="Пицца Маргарита">
+                                            <h3 class="item__title">Маргарита</h3>
+                                        </a>
+                                        <p class="item__weight">480 г</p>
+                                        <p class="item__text">Соус маринара, томаты, сыр моцарела, соус песто</p>
+                                    </div>
+                                    <div class="item__bot">
+                                        <div class="item__count">
+                                            <button class="item__count-remove">
+                                                <img src="images/icon/remove.svg " alt="удалить пуццу">
+                                            </button>
+                                            <span class="item__count-numbr">0</span>
+                                            <button class="item__count-add">
+                                                <img src="images/icon/add.svg" alt="добавить пиццу">
+                                            </button>
+                                        </div>
+                                        <p class="item__price">102 грн</p>
+                                        <button class="item__basket"></button>
+                                    </div>
+                                </div>
+                                <div class="catalog__item item mix all spicy popular">
+                                    <div class="item__top">
+                                        <a class="item__link" href="#">
+                                            <img class="item__img" src="images/content/Pizza_chicken.png"
+                                                alt="Пицца Четыре сыра">
+                                            <h3 class="item__title">Чикен</h3>
+                                        </a>
+                                        <p class="item__weight">530 г</p>
+                                        <p class="item__text">Сыр моцарела, соус маринара, соус ВВQ, часнок, ананас,
+                                            филе
+                                            куриное, sous-vide, перец болгарский</p>
+                                    </div>
+                                    <div class="item__bot">
+                                        <div class="item__count">
+                                            <button class="item__count-remove">
+                                                <img src="images/icon/remove.svg " alt="удалить пуццу">
+                                            </button>
+                                            <span class="item__count-numbr">0</span>
+                                            <button class="item__count-add">
+                                                <img src="images/icon/add.svg" alt="добавить пиццу">
+                                            </button>
+                                        </div>
+                                        <p class="item__price">152 грн</p>
+                                        <button class="item__basket"></button>
+                                    </div>
+                                </div>
+                                <div class="catalog__item item mix all spicy popular">
+                                    <div class="item__top">
+                                        <a class="item__link" href="#">
+                                            <img class="item__img" src="images/content/Pizza_neapolitano.png"
+                                                alt="Пицца Четыре сыра">
+                                            <h3 class="item__title">Неаполитана</h3>
+                                        </a>
+                                        <p class="item__weight">560 г</p>
+                                        <p class="item__text">Соус BBQ, соус маринара, сыр моцарела, горчица, филе
+                                            куриное,
+                                            sous-vide, колбаски охотничьи, пеперони, конфитюр с лука, кукуруза, перец
+                                            болгарский</p>
+                                    </div>
+                                    <div class="item__bot">
+                                        <div class="item__count">
+                                            <button class="item__count-remove">
+                                                <img src="images/icon/remove.svg " alt="удалить пуццу">
+                                            </button>
+                                            <span class="item__count-numbr">0</span>
+                                            <button class="item__count-add">
+                                                <img src="images/icon/add.svg" alt="добавить пиццу">
+                                            </button>
+                                        </div>
+                                        <p class="item__price">148 грн</p>
+                                        <button class="item__basket"></button>
+                                    </div>
+                                </div>
+                                <div class="catalog__item item mix all spicy popular">
+                                    <div class="item__top">
+                                        <a class="item__link" href="#">
+                                            <img class="item__img" src="images/content/Pizza_corbonara.png"
+                                                alt="Пицца Четыре сыра">
+                                            <h3 class="item__title">Карбонара</h3>
+                                        </a>
+                                        <p class="item__weight">510 г</p>
+                                        <p class="item__text">Сыр моцарела, шампиньоны, сыр дор блю, томаты, буженина,
+                                            соус
+                                            песто, соус маринара и трюфельное масло</p>
+                                    </div>
+                                    <div class="item__bot">
+                                        <div class="item__count">
+                                            <button class="item__count-remove">
+                                                <img src="images/icon/remove.svg " alt="удалить пуццу">
+                                            </button>
+                                            <span class="item__count-numbr">0</span>
+                                            <button class="item__count-add">
+                                                <img src="images/icon/add.svg" alt="добавить пиццу">
+                                            </button>
+                                        </div>
+                                        <p class="item__price">160 грн</p>
+                                        <a class="item__basket" href="#"></a>
+                                    </div>
+                                </div>
+                                <div class="catalog__item item mix all spicy popular vegan">
+                                    <div class="item__top">
+                                        <a class="item__link" href="#">
+                                            <img class="item__img" src="images/content/Pizza_fourseasons.png"
+                                                alt="Пицца Четыре сыра">
+                                            <h3 class="item__title">Четыре сыра</h3>
+                                        </a>
+                                        <p class="item__weight">480 г</p>
+                                        <p class="item__text">Cыр дор блю, сыр чеддер, сыр пармезан, сыр моцарела,
+                                            груша,
+                                            орех грецкий, сливочный соус и трюфельное масло</p>
+                                    </div>
+                                    <div class="item__bot">
+                                        <div class="item__count">
+                                            <button class="item__count-remove">
+                                                <img src="images/icon/remove.svg " alt="удалить пуццу">
+                                            </button>
+                                            <span>0</span>
+                                            <button class="item__count-add">
+                                                <img src="images/icon/add.svg" alt="добавить пиццу">
+                                            </button>
+                                        </div>
+                                        <p class="item__price">145 грн</p>
+                                        <button class="item__basket"></button>
+                                    </div>
+                                </div>
+                                <div class="catalog__item item mix all spicy popular sale">
+                                    <div class="item__top">
+                                        <a class="item__link" href="#">
+                                            <img class="item__img" src="images/content/Pizza_doci.png" alt="Пицца Doci">
+                                            <h3 class="item__title">Doci</h3>
+                                        </a>
+                                        <p class="item__weight">510 г.</p>
+                                        <p class="item__text">Колбаски, сыр, томаты, оливки, фирменный соус</p>
+                                    </div>
+                                    <div class="item__bot">
+                                        <div class="item__count">
+                                            <button class="item__count-remove">
+                                                <img src="images/icon/remove.svg " alt="удалить пуццу">
+                                            </button>
+                                            <span class="item__count-numbr">0</span>
+                                            <button class="item__count-add">
+                                                <img src="images/icon/add.svg" alt="добавить пиццу">
+                                            </button>
+                                        </div>
+                                        <p class="item__price">155 грн</p>
+                                        <button class="item__basket"></button>
+                                    </div>
+                                </div>
+                                <div class="catalog__item item mix all spicy popular">
+                                    <div class="item__top">
+                                        <a class="item__link" href="#">
+                                            <img class="item__img" src="images/content/Pizza_sicilia.png"
+                                                alt="Пицца Четыре сыра">
+                                            <h3 class="item__title">Сицилия</h3>
+                                        </a>
+                                        <p class="item__weight">540 г</p>
+                                        <p class="item__text">Соус маринара, колбаски, сыр моцарела, томаты, кукуруза
+                                        </p>
+                                    </div>
+                                    <div class="item__bot">
+                                        <div class="item__count">
+                                            <button class="item__count-remove">
+                                                <img src="images/icon/remove.svg " alt="удалить пуццу">
+                                            </button>
+                                            <span class="item__count-numbr">0</span>
+                                            <button class="item__count-add">
+                                                <img src="images/icon/add.svg" alt="добавить пиццу">
+                                            </button>
+                                        </div>
+                                        <p class="item__price">145 грн</p>
+                                        <button class="item__basket"></button>
+                                    </div>
+                                </div>
+                                <div class="catalog__item item mix all spicy popular">
+                                    <div class="item__top">
+                                        <a class="item__link" href="#">
+                                            <img class="item__img" src="images/content/Pizza_fourseasons.png"
+                                                alt="Пицца Четыре сыра">
+                                            <h3 class="item__title">Четыре сыра</h3>
+                                        </a>
+                                        <p class="item__weight">480 г</p>
+                                        <p class="item__text">Cыр дор блю, сыр чеддер, сыр пармезан, сыр моцарела,
+                                            груша,
+                                            орех грецкий, сливочный соус и трюфельное масло</p>
+                                    </div>
+                                    <div class="item__bot">
+                                        <div class="item__count">
+                                            <button class="item__count-remove">
+                                                <img src="images/icon/remove.svg " alt="удалить пуццу">
+                                            </button>
+                                            <span class="item__count-numbr">0</span>
+                                            <button class="item__count-add">
+                                                <img src="images/icon/add.svg" alt="добавить пиццу">
+                                            </button>
+                                        </div>
+                                        <p class="item__price">145 грн</p>
+                                        <button class="item__basket"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="delivery page__section">
+                <div class="containerfluid delivery__containerfluid"
+                    style="background:center/cover url(images/background/catalog-background.png);">
+                    <div class="container">
+                        <div class="delivery__inner inner">
+                            <h2 class="delivery__title title">Доставка</h2>
+                            <div class="delivery__box">
+                                <div class="delivery__order-make delivery__order">
+                                    <h3 class="delivery__order-title">Как сделать заказ</h3>
+                                    <div class="order__options order__options-site">
+                                        <h4 class="order__title">На сайте</h4>
+                                        <p class="order__text">Выбирете блюда в розделе Каталог</p>
+                                    </div>
+                                    <div class="order__options order__options-app">
+                                        <h4 class="order__title">В МОБИЛЬНОМ ПРИЛОЖЕНИИ</h4>
+                                        <p class="order__text">Установите приложение для iPhone, iPhad или Adroid</p>
+                                    </div>
+                                    <div class="order__options order__options-phone">
+                                        <h4 class="order__title">ПО ТЕЛЕФОНУ</h4>
+                                        <p class="order__text">Установите приложение для iPhone, iPhad или Adroid</p>
+                                    </div>
+                                </div>
+                                <div class="delivery__order-get delivery__order">
+                                    <h3 class="delivery__order-title">Как получить заказ</h3>
+                                    <div class="order__options order__options-courier">
+                                        <h4 class="order__title">
+                                            ДОСТАВКА КУРЬЕРОМ
+                                        </h4>
+                                        <p class="order__text">
+                                            Доставка - 40 грн.<br>
+                                            При заказе от 200 грн. - БЕСПЛАТНО
+                                        </p>
+                                    </div>
+                                    <div class="order__options order__options-selftake">
+                                        <h4 class="order__title">
+                                            ЗАБЕРУ САМ СО СКИДКОЙ 18%
+                                        </h4>
+                                        <p class="order__text">
+                                            Возможна забрать заказ самовыносом
+                                            из ближайшего ресторана со СКИДКОЙ 18%.
+                                            Время предварительного заказа - до 40 мин.
+                                        </p>
+                                    </div>
+                                    <div class="order__options order__options-ontime">
+                                        <h4 class="order__title">
+                                            ДОСТАВКА В УКАЗАННОЕ ВРЕМЯ
+                                        </h4>
+                                        <p class="order__text">
+                                            Укажите время в которое вы хотите получить заказ,
+                                            и мы доставим точно в срок.
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+            <section class="aboutus page__section">
+                <div class="containerfluid aboutus__containerfluid"
+                    style="background:center/cover url(images/background/catalog-background.png);">
+                    <div class="container">
+                        <div class="aboutus__inner inner">
+                            <h2 class="aboutus__title title">О нас</h2>
+                            <p class="aboutus__text">
+                                Почему PizzaBunny? Потомучто PizzaBunny — это Семья. Маленькая, дружна семья.
+                                Именно семейные ценности объеденяют всех посетителей ресторанчика.
+                            </p>
+                            <p class="aboutus__text">
+                                Сеть ресторанчиков PizzaBunny неизменно следует своим традициям и принципам.
+                                В каждом нашем ресторанчике гость может ощутить себя частью Семьи, насладиться
+                                атмосферой уюта и умиротворения, и конечно же попробовать пиццу, приготовленную
+                                нашими професиональными пицеёлами.
+                            </p>
+                            <p class="aboutus__text">
+                                В наших ресторанах мы хотимь показать гостям Италию,
+                                которой видим её мы, - гостепреимную, солнечную и теплую.
+                            </p>
+                            <p class="aboutus__text">
+                                В этом лучше убедиться САМОМУ ;)
+                            </p>
+                            <p class="aboutus__text"> Всегда ждём Вас в PizzaBunny!
+                            </p>
+                            <img class="aboutus__img" src="images/background/aboutus-bg.png" alt="">
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer class="footer page__section">
+
+            <div class="containerfluid contacts__containerfluid"
+                style="background:center/cover url(images/background/catalog-background.png);">
+                <div class="container">
+                    <div class="contacts__inner inner">
+                        <h2 class="contacts__title title">Контакты</h2>
+                        <div class="contacts__box">
+                            <div class="contacts__left">
+                                <nav class="contacts__menu menu">
+                                    <ul class="menu__list page__list">
+                                        <li class="menu__item">
+                                            <a href="#main" class="menu__link">Главная</a>
+                                        </li>
+                                        <li class="menu__item">
+                                            <a href="#catalog" class="menu__link">Каталог</a>
+                                        </li>
+                                        <li class="menu__item">
+                                            <a href="#sale" class="menu__link">Акции</a>
+                                        </li>
+                                        <li class="menu__item">
+                                            <a href="#delivery" class="menu__link">Доставка</a>
+                                        </li>
+                                        <li class="menu__item">
+                                            <a href="#aboutUs" class="menu__link">О нас</a>
+                                        </li>
+                                        <li class="menu__item">
+                                            <a href="#contacts" class="menu__link">Контакты</a>
+                                        </li>
+                                    </ul>
+                                    <div class="header__contacts contacts">
+                                        <p class="contact__adress">
+                                            г.Киев<br>
+                                            ул. Киевская 1
+                                        </p>
+                                        <p class="contact__phone">
+                                            <a class="contact__phone-tel1" href="tel:+388005005050">
+                                                +38-800-500-50-50</a>
+                                            <a class="contact__phone-tel2" href="tel:+388005005051">
+                                                +38-800-501-51-51</a>
+                                    </div>
+                                </nav>
+                            </div>
+                            <div class="contacts__descr">
+                                <div class="contacts__info contacts__adress">
+                                    <h4 class="contacts__info-title">Адрес</h4>
+                                    <p class="contacts__info-text">г.Киев, ул. Киевская 1</p>
+                                </div>
+                                <div class="contacts__info contacts__phone">
+                                    <h4 class="contacts__info-title">Телефон</h4>
+                                    <p class="contacts__info-text">+38-800-500-50-50
+                                        <br>
+                                        +38-800-501-51-51</p>
+                                </div>
+                                <div class="contacts__info contacts__mail">
+                                    <h4 class="contacts__info-title">Почта</h4>
+                                    <p class="contacts__info-text">pizza_bunny@gmail.com</p>
+                                    </a>
+                                </div>
+                                <div class="contacts__info contacts__worktime">
+                                    <h4 class="contacts__info-title">График работы</h4>
+                                    <p class="contacts__info-text">Ежедневно с 10.00 до 22.00</p>
+                                </div>
+                            </div>
+                            <div class="map">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m17!1m8!1m3!1d2176.779181345632!2d30.53417541187636!3d50.4470900117241!3m2!1i1024!2i768!4f13.1!4m6!3e2!4m0!4m3!3m2!1d50.447421899999995!2d30.535196799999998!5e1!3m2!1sru!2sua!4v1603701918786!5m2!1sru!2sua"
+                                    width="480p" height="540" frameborder="0" style="border:0;" allowfullscreen=""
+                                    aria-hidden="false" tabindex="0"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__bottom"> 2020год. Все права защищены</div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
+<!-- <div class="tabs-wrapper">
+<div class="tabs">
+    <a href="#" class="tab"></a>
+</div>
+<div class="tabs-container">
+    <div class="tabs-content"></div>
+</div>
+</div> -->

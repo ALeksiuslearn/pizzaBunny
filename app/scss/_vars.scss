@@ -1,0 +1,32 @@
+//? example of color. to use it  color: $dark;
+//  $dark: #2f3035;
+$red: #e94175;
+$white: #fff;
+$orange: #d77a0e;
+$black: #000;
+// ?examples of fonts
+@mixin sfp-reg {
+  font-family: "SFProDisplay-Regular", sans-serif;
+  font-weight: 400;
+  font-display: swap;
+}
+@mixin sfp-m {
+  font-family: "SFProDisplay-Medium", sans-serif;
+  font-weight: 500;
+  font-display: swap;
+}
+@mixin sfp-sb {
+  font-family: "SFProDisplay-Semibold", sans-serif;
+  font-weight: 600;
+  font-display: swap;
+}
+@mixin sfp-b {
+  font-family: "SFProDisplay-Bold", sans-serif;
+  font-weight: 700;
+  font-display: swap;
+}
+@mixin br {
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  font-display: swap;
+}
